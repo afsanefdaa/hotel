@@ -1,4 +1,4 @@
-#run client side
+##run client side
 `yarn start` 
 * navigate to localhost:3000
 * admin page => /admin
@@ -6,15 +6,15 @@
 * for admin add and remove hotels I used redux because 
 of lack of time I couldn't provide a small db
 
-#run json-server side
+##run json-server side
 `yarn start` 
 * runs on port 8000
 
-#images
+##images
 I used https://unsplash.com/ for images and google fonts so 
 make sure you are connected to the network.
 
-#todos
+##todos
 * filters form requires validation
 * create hotel form requires validation
 * use a small db like lowdb compatible with json-server to add and remove hotel
