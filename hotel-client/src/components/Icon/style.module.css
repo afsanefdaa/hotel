@@ -1,0 +1,9 @@
+.items {
+  display: flex;
+  margin-bottom: 5px; }
+  .items span {
+    font-weight: bold;
+    margin-left: 5px;
+    color: #373a36; }
+
+/*# sourceMappingURL=style.module.css.map */

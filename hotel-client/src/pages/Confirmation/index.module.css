@@ -1,0 +1,57 @@
+.body {
+  background: url("https://images.unsplash.com/photo-1514388614019-c755c395185c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80") no-repeat center;
+  background-size: cover;
+  height: 600px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center; }
+  .body .box {
+    background-color: #101c33;
+    filter: alpha(opacity=80);
+    -moz-opacity: 0.8;
+    opacity: 0.8;
+    width: 60%;
+    height: 70%;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; }
+    .body .box .title {
+      text-align: center;
+      color: white;
+      font-size: 50px;
+      font-weight: 600;
+      padding: 10px 0; }
+    .body .box .info {
+      display: flex;
+      flex-direction: column;
+      width: 90%; }
+      .body .box .info .item {
+        display: flex;
+        justify-content: space-between;
+        margin: 0; }
+        .body .box .info .item span {
+          color: white; }
+          .body .box .info .item span:first-child {
+            flex: 1;
+            font-weight: 400; }
+          .body .box .info .item span:last-child {
+            flex: 2;
+            font-weight: bold; }
+    .body .box .submit {
+      width: 50%;
+      margin-top: 29px;
+      padding: 10px 40px;
+      font-size: 15px;
+      font-weight: bold;
+      border-radius: 3px;
+      display: block;
+      cursor: pointer; }
+      .body .box .submit:hover {
+        color: #d48166;
+        border-color: #d48166; }
+
+/*# sourceMappingURL=index.module.css.map */

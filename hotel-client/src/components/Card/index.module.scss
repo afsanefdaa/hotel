@@ -1,0 +1,85 @@
+.card {
+  display: flex;
+  align-items: stretch;
+  align-content: stretch;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 0;
+  border: unset;
+  flex-direction: column;
+  height: auto;
+  width: 280px;
+  margin: 0 0 20px 0;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px 0 #b2b5be;
+  background-color: #fff;
+
+  &:hover {
+    border-color: rgba(0, 0, 0, 0.09);
+    -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.09);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.09);
+  }
+
+  .wrapper {
+    img {
+      height: 200px;
+      width: 100%;
+    }
+  }
+
+  .content {
+    padding: 15px;
+
+    .title {
+      font-size: 15px;
+      font-weight: bold;
+      color: #373a36;
+    }
+
+    .descBox {
+      margin-bottom: 25px;
+
+      .desc {
+        font-size: 14px;
+        font-weight: 600;
+        color: #717171;
+      }
+    }
+
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-content: center;
+
+      .detail {
+        text-decoration: unset;
+        font-size: 13px;
+        padding: 5px 15px;
+        border-radius: 4px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        border: 1px solid #2b2929;
+        color: #2b2929;
+
+        &:hover {
+          color: #d48166;
+          border-color: #d48166;
+          box-shadow: 0 2px 4px 0 #b2b5be;
+        }
+      }
+
+      .rateBox {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        span {
+          padding-left: 5px;
+          color: #373a36;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

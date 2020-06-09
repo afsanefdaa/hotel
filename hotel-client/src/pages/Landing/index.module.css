@@ -1,0 +1,35 @@
+.boxOne, .boxTwo, .boxThree {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+
+.boxOne::after {
+  content: '';
+  flex-basis: 280px; }
+
+.boxTwo::after {
+  content: '';
+  flex-basis: 560px; }
+
+.boxThree::after {
+  content: '';
+  flex-basis: 840px; }
+
+.caseStudy {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2b2929;
+  width: 100%;
+  text-align: center;
+  display: block; }
+
+.welcomeNote {
+  text-align: center; }
+
+.noMatch {
+  width: 100%;
+  display: block;
+  text-align: center;
+  font-size: 30px; }
+
+/*# sourceMappingURL=index.module.css.map */

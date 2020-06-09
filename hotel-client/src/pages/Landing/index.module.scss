@@ -1,0 +1,52 @@
+%shared_cls {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.boxOne {
+  @extend %shared_cls;
+
+  &::after {
+    content: '';
+    flex-basis: 280px;
+  }
+}
+
+.boxTwo {
+  @extend %shared_cls;
+
+  &::after {
+    content: '';
+    flex-basis: 560px;
+  }
+}
+
+.boxThree {
+  @extend %shared_cls;
+
+  &::after {
+    content: '';
+    flex-basis: 840px;
+  }
+}
+
+.caseStudy {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2b2929;
+  width: 100%;
+  text-align: center;
+  display: block;
+}
+
+.welcomeNote {
+  text-align: center;
+}
+
+.noMatch {
+  width: 100%;
+  display: block;
+  text-align: center;
+  font-size: 30px;
+}

@@ -1,0 +1,140 @@
+.body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+   h2 {
+     color: #2b2929;
+   }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-bottom: 20px;
+
+    input, textarea {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-variant: tabular-nums;
+      list-style: none;
+      -webkit-font-feature-settings: 'tnum';
+      font-feature-settings: 'tnum';
+      position: relative;
+      display: inline-block;
+      width: 100%;
+      height: 32px;
+      padding: 4px 11px;
+      color: rgba(0, 0, 0, 0.65);
+      font-size: 14px;
+      line-height: 1.5;
+      background-color: #fff;
+      background-image: none;
+      border: 1px solid #d9d9d9;
+      border-radius: 4px;
+      -webkit-transition: all 0.3s;
+      transition: all 0.3s;
+    }
+
+    textarea {
+      max-width: 100%;
+      height: auto;
+      min-height: 32px;
+      line-height: 1.5;
+      vertical-align: bottom;
+      -webkit-transition: all 0.3s, height 0s;
+      transition: all 0.3s, height 0s;
+    }
+
+    label {
+      color: #d48166;
+      font-size: 15px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .submit {
+      margin-top: 15px;
+      padding: 10px 0;
+      color: #d48166;
+      font-size: 17px;
+      font-weight: bold;
+      border-radius: 3px;
+      cursor: pointer;
+      background: white;
+      border-color: #d48166;
+    }
+  }
+
+  .table {
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.25);
+    margin-bottom: 20px;
+    width: 100%;
+
+    thead {
+      background: #dedede;
+
+      th {
+        text-align: left;
+        color: #373a36;
+        padding: 10px 5px;
+      }
+    }
+
+    tbody {
+      tr {
+        &:hover {
+          td {
+            border-color: #d48166;
+          }
+        }
+
+        td {
+          padding: 5px;
+          border-bottom: 1px solid #dedede;
+        }
+
+        &:last-child {
+          td {
+            border: unset;
+          }
+        }
+      }
+    }
+
+    .name {
+      color: #2c8fa0;
+      font-size: 15px;
+      font-weight: bold;
+    }
+
+    .removeBtn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .remove {
+        padding: 3px 10px;
+        color: #d48166;
+        font-size: 16px;
+        font-weight: 600;
+        background: unset;
+        border: 1px solid #d48166;
+        border-radius: 43px;
+        text-decoration: unset;
+        cursor: pointer;
+
+        &:hover {
+          color: #2c8fa0;
+          border-color: #2c8fa0;
+          box-shadow: 0 2px 4px 0 #b2b5be;
+        }
+      }
+    }
+  }
+}

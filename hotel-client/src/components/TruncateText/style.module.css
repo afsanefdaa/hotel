@@ -1,0 +1,12 @@
+.module {
+  width: 250px;
+  overflow: hidden; }
+  .module p {
+    margin: 0; }
+
+.lineClamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical; }
+
+/*# sourceMappingURL=style.module.css.map */
