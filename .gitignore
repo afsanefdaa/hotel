@@ -1,3 +1,10 @@
 .idea
 .DS_Store
 CASE_STUDY.pdf
+hotel-api/static
+hotel-api/node_modules
+hotel-client/node_modules
+hotel-client/yarn.lock
+hotel-api/yarn.lock
+hotel-api/.env
+hotel-client/.env

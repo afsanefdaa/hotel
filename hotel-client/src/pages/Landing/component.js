@@ -5,7 +5,6 @@ import { getAllHotels } from '../../api/Landing/index';
 import { Card, Filters } from '../../components';
 import style from './index.module.scss';
 
-
 type hotelProps = {
   items: Array,
 };

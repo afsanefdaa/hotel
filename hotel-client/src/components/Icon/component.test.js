@@ -6,6 +6,6 @@ test('Snapshot testing', () => {
   const component = renderer.create(
     <Icon text="rating" value={3.20} />,
   );
-  let tree = component.toJSON();
+  const tree = component.toJSON();
   expect(tree).toMatchSnapshot();
 });

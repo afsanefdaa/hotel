@@ -14,5 +14,4 @@ export const Container = ({ children, className }: componentProps) => (
   </div>
 );
 
-
 export default Container;

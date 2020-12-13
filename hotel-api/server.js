@@ -1,29 +1,29 @@
 const jsonServer = require('json-server');
+const lodash = require('lodash');
 const server = jsonServer.create();
 const middleWares = jsonServer.defaults();
 const port = 8000;
-const generateData = require('./dataGenerator');
-const allRooms = generateData.hotels.map(el => el.rooms);
-// convert array of arrays to one array
-const rooms = [].concat.apply([], allRooms);
+const hotels = require('./static/hotels.json');
+const rooms = require('./static/rooms.json');
+const users = require('./static/users.json');
 
 server.use(jsonServer.bodyParser);
 server.use(middleWares);
 
-server.get('/hotels', (req, res) => {
+server.get('/hotels', async (req, res) => {
     if (req.method === 'GET') {
-        let result = generateData.hotels;
-        if (result) {
-            res.status(200).jsonp(result);
+        if (hotels.length !== 0) {
+            res.status(200).jsonp(hotels);
         } else {
             res.status(404).jsonp({ error: 'not found' });
         }
     }
 });
 
-server.get('/hotels/:id', (req, res) => {
+server.get('/hotels/:id', async (req, res) => {
     if (req.method === 'GET') {
-        let result = generateData.hotels.find(el => String(el.id) === String(req.params.id) );
+        const result = hotels.find(el => String(el.id) === String(req.params.id) );
+        console.warn(result)
         if (result) {
             res.status(200).jsonp(result);
         } else {
@@ -45,9 +45,8 @@ server.get('/rooms/:id', (req, res) => {
 
 server.get('/users/:id', (req, res) => {
     if (req.method === 'GET') {
-        let result = generateData.users;
-        if (result) {
-            res.status(200).jsonp(result);
+        if (users) {
+            res.status(200).jsonp(users);
         } else {
             res.status(404).jsonp({ error: 'not found' });
         }
@@ -55,6 +54,8 @@ server.get('/users/:id', (req, res) => {
 });
 
 server.listen(port);
+console.log(`> Server is Ready on http://localhost:${port}`); // eslint-disable-line no-console
+
 
 
 

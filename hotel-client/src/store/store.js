@@ -9,7 +9,6 @@ const configureStore = (initialState = {}) => {
   const composeEnhancers = (isDev && !isServer && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__)
     || compose;
 
-
   const createStoreWithMiddleware = composeEnhancers(
     applyMiddleware(thunk),
   )(createStore);

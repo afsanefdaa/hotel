@@ -15,7 +15,6 @@ import {
 
 import configureStore from './store/store';
 
-
 const routing = (
   <Provider store={configureStore()}>
     <Router>

@@ -7,7 +7,6 @@ import { getSingleHotel } from '../../api/Hotel';
 import style from './index.module.scss';
 import { Icon } from '../../components';
 
-
 const Hotel = () => {
   const [image, setImage] = useState();
   const [more, setMore] = useState(2);
