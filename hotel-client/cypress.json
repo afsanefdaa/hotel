@@ -1,0 +1,12 @@
+{
+  "env": {
+    "BASE_URL": "http://localhost:3000"
+  },
+  "baseUrl": "http://localhost:3000",
+  "retries": { "runMode": 2, "openMode": 2 },
+  "reporter": "Nyan",
+  "reporterOptions": {
+    "mochaFile": "results/my-test-output.xml"
+  },
+  "video": false
+}

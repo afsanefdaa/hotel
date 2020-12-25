@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^7.1.2",
     "axios": "^0.19.2",
     "classnames": "^2.2.6",
+    "cypress": "^6.2.0",
     "lazysizes": "^5.2.2",
     "node-sass": "^4.13.1",
     "prop-types": "^15.7.2",
@@ -32,7 +33,9 @@
     "lint:js": "eslint . --ext .js,.jsx",
     "lint:js:fix": "npm run lint:js -- --fix",
     "flow:run": "yarn run flow",
-    "flow:status": "yarn run flow status"
+    "flow:status": "yarn run flow status",
+    "cy:run": "cypress run",
+    "cy:open": "cypress open"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -75,6 +78,8 @@
     "babel-plugin-inline-react-svg": "^1.1.1",
     "eslint": "^6.7.1",
     "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-chai-friendly": "^0.6.0",
+    "eslint-plugin-cypress": "^2.11.2",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.16.0",
